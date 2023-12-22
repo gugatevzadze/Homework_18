@@ -35,7 +35,7 @@ class MainFragment : BaseFragment<FragmentMainBinding>(FragmentMainBinding::infl
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 try {
-                    viewModel.getUsers().collectLatest { pagingData ->
+                    viewModel.getUsers(viewLifecycleOwner.lifecycleScope).collectLatest { pagingData ->
                         adapter.submitData(pagingData)
                     }
                 } catch (e: Exception) {

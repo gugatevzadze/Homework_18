@@ -1,4 +1,4 @@
-package com.example.homework_18
+package com.example.homework_18.splash
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
