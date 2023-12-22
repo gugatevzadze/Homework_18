@@ -36,5 +36,4 @@ class UserPagingSource(private val apiService: ApiService) : PagingSource<Int, U
     override fun getRefreshKey(state: PagingState<Int, User>): Int? {
         return state.anchorPosition
     }
-
 }

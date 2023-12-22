@@ -6,8 +6,8 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import com.example.homework_18.service.ApiService
 import com.example.homework_18.network.Network
+import com.example.homework_18.service.ApiService
 import kotlinx.coroutines.flow.Flow
 
 class UserViewModel : ViewModel() {
@@ -22,3 +22,5 @@ class UserViewModel : ViewModel() {
         //converting the Pager to a Flow of PagingData and caching the result in the ViewModel's scope
     }
 }
+
+
